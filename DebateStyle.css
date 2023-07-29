@@ -1,0 +1,352 @@
+.headTextbox {
+  box-sizing: border-box;
+  display: flex;
+  border: none;
+  outline: none;
+  height: 100%;
+  border-radius: 8px;
+  width: 100%;
+  padding-top: 1vw;
+  margin: 0;
+  position: relative;
+  font-size: 3vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff00;
+}
+#head-Container {
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #4eb7fd;
+  /*outline: 5px solid black;*/
+  border-radius: 8px;
+}
+#miniHead:hover {
+  background-color: rgba(117, 182, 179, 0.644);
+  cursor: pointer;
+}
+#head {
+  height: 100%;
+  padding: 1%;
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center;
+  position: relative;
+  font-size: 4.5vw;
+  border-radius: 8px;
+  margin: 0;
+}
+.headhover:hover {
+  background-color: #0886da;
+  cursor: pointer;
+}
+.textbox {
+  font-size: 40%;
+  width: 60px;
+  height: 100%;
+  border: 0.7px solid black;
+  padding: 1mm;
+  bottom: 10px;
+  left: 10px;
+  margin-right: 3px;
+}
+.proBox {
+  position: relative;
+  display: flex;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 5px;
+  margin: 1px;
+  outline: none;
+  width: 15%;
+}
+.contraBox {
+  display: flex;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 5px;
+  margin: 1px;
+  outline: none;
+  width: 15%;
+}
+.argWrapper {
+  position: relative;
+  box-sizing: border-box;
+  border: 5px solid black;
+  background-color: white;
+  align-self: flex-start;
+  display: flex;
+  height: 8vw;
+  font-size: 1vw;
+  margin: 2px;
+  width: 97%;
+  order: 2;
+  z-index: 1;
+}
+.argWrapper:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+#proButton {
+  /*align-self: center;
+  margin-left: 1vw;
+  width: 9vw;
+  height: 5vw;
+  border: 0.3vw outset rgb(82, 82, 82);
+  border-radius: 0.8vw;
+  font-size: 2vw;
+  font-weight: bold;*/
+}
+#proButton:hover {
+  transform: scale(1.2);
+}
+#contraButton {
+  /*align-self: center;
+  margin-right: 1vw;
+  width: 9vw;
+  height: 5vw;
+  border: 0.3vw outset rgb(82, 82, 82);
+  border-radius: 0.8vw;
+  font-size: 2vw;
+  font-weight: bold;*/
+}
+#contraButton:hover {
+  transform: scale(1.2);
+}
+.allArgsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#proContainer {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-top: 10px;
+}
+#contraContainer {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+.clickable-area {
+  height: 20px;
+  width: 50%;
+  background-color: white;
+  cursor: pointer;
+  font-size: 8px;
+  margin-left: 2px;
+}
+.argContainer {
+  float: left;
+  margin-right: 10px;
+}
+.argContainer2 {
+  float: right;
+  margin-left: 10px;
+}
+.body {
+  background: #02394bf6;
+  height: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-right: 15vw;
+  margin-left: 15vw;
+}
+#pro {
+  float: left;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  /*border: 5px solid black;*/
+  border-radius: 20px;
+  padding: 1%;
+  width: 20vw;
+  text-align: center;
+  font-size: 3vw;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #4eb7fd;
+}
+#contra {
+  float: right;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: flex-end;
+  border-radius: 20px;
+  padding: 1%;
+  width: 20vw;
+  text-align: center;
+  font-size: 3vw;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #4eb7fd;
+}
+.button {
+  min-width: none;
+  box-sizing: content-box;
+  width: 100px;
+  height: 100px;
+}
+#PC-Container {
+  display: none; /*flex*/
+  flex-direction: row;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+.buttonWrapper {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 23%;
+  gap: 0%;
+  z-index: 2;
+}
+.argButtons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 90%;
+  z-index: 5;
+}
+.deleteIcon {
+  width: 150%;
+  height: 150%;
+  opacity: 0.8;
+  z-index: 3;
+  filter: invert(41%) sepia(68%) saturate(4778%) hue-rotate(348deg)
+    brightness(99%) contrast(89%);
+}
+.editIcon {
+  width: 150%;
+  height: 150%;
+  opacity: 0.8;
+  z-index: 3;
+  filter: invert(0%) sepia(91%) saturate(7462%) hue-rotate(349deg)
+    brightness(89%) contrast(96%);
+}
+.argButtons:hover,
+.editIcon:hover,
+.deleteIcon:hover {
+  transform: scale(1.2);
+  z-index: 5;
+  opacity: 1;
+}
+.textContainer {
+  margin: 3%;
+}
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.input-field {
+  position: relative;
+  width: 97%;
+  height: 8vw;
+  order: 1;
+}
+.edit-field {
+  position: absolute;
+  height: 8vw;
+  width: 100%;
+  border-style: dashed;
+  border-width: 3px;
+}
+.overviewContainer {
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 3vw;
+  height: fit-content;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  gap: 15px;
+}
+.overviewContainerRoot {
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overviewIcon {
+  width: 3%;
+  height: 1vh;
+  padding: 5px;
+  border: 3px solid yellow;
+  border-radius: 3px;
+  transform: scale(1.1);
+}
+.overviewIconPro {
+  width: 30px;
+  height: 20px;
+  padding: 5px;
+  border: 2.5px solid #008000;
+  border-radius: 3px;
+}
+.overviewIconContra {
+  width: 30px;
+  height: 20px;
+  padding: 5px;
+  border: 2.5px solid red;
+  border-radius: 3px;
+}
+.overviewIconPro:hover,
+.overviewIconContra:hover,
+.overviewIcon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.overviewLevel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  height: fit-content;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+.rightSide {
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 10px;
+  height: 20px;
+}
+.leftSide {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  gap: 10px;
+  height: 20px;
+}
+.addButtonIconContra {
+  filter: invert(41%) sepia(68%) saturate(4778%) hue-rotate(348deg)
+    brightness(99%) contrast(89%);
+}
+.addButtonIconPro {
+  filter: invert(15%) sepia(74%) saturate(6500%) hue-rotate(107deg)
+    brightness(106%) contrast(105%);
+}
